@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos Comerciales</title>
+    <link rel="stylesheet" href="CSS/equipos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="Dashboard_Dirección.html" class="sidebar-item">Dashboard</a>
+            <a href="Equipos.html" class="sidebar-item active">Equipos</a>
+            <a href="Ventas.html" class="sidebar-item">Ventas</a>
+            <a href="reportes.html" class="sidebar-item">Reportes</a>
+            <a href="metas.html" class="sidebar-item">Metas Comerciales</a>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1>Equipos Comerciales</h1>
+                <div class="date-filter">
+                    <select id="periodSelector">
+                        <option value="day">Hoy</option>
+                        <option value="week">Esta Semana</option>
+                        <option value="month">Este Mes</option>
+                        <option value="year">Este Año</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="teams-container">
+                <!-- Equipo Diana -->
+                <div class="team-section">
+                    <h2>Equipo Diana</h2>
+                    <div class="team-metrics">
+                        <div class="metric">
+                            <h3>Total Leads</h3>
+                            <span class="value">1,234</span>
+                        </div>
+                        <div class="metric">
+                            <h3>Formularios</h3>
+                            <span class="value">890</span>
+                        </div>
+                    </div>
+                    <div class="status-metrics">
+                        <div class="status-item">
+                            <span class="label">Suscripciones</span>
+                            <span class="value">245</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">Seguimientos</span>
+                            <span class="value">380</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">No Responde</span>
+                            <span class="value">156</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">No Interesado</span>
+                            <span class="value">89</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">Equivocado</span>
+                            <span class="value">20</span>
+                        </div>
+                    </div>
+                    <div class="team-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Asesor</th>
+                                    <th>Suscripciones</th>
+                                    <th>Seguimientos</th>
+                                    <th>No Responde</th>
+                                    <th>No Interesado</th>
+                                    <th>Equivocado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="teamDianaTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Equipo Nicol -->
+                <div class="team-section">
+                    <h2>Equipo Nicol</h2>
+                    <div class="team-metrics">
+                        <div class="metric">
+                            <h3>Total Leads</h3>
+                            <span class="value">1,156</span>
+                        </div>
+                        <div class="metric">
+                            <h3>Formularios</h3>
+                            <span class="value">856</span>
+                        </div>
+                    </div>
+                    <div class="status-metrics">
+                        <div class="status-item">
+                            <span class="label">Suscripciones</span>
+                            <span class="value">234</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">Seguimientos</span>
+                            <span class="value">345</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">No Responde</span>
+                            <span class="value">167</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">No Interesado</span>
+                            <span class="value">92</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">Equivocado</span>
+                            <span class="value">18</span>
+                        </div>
+                    </div>
+                    <div class="team-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Asesor</th>
+                                    <th>Suscripciones</th>
+                                    <th>Seguimientos</th>
+                                    <th>No Responde</th>
+                                    <th>No Interesado</th>
+                                    <th>Equivocado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="teamNicolTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/equipos.js"></script>
+</body>
+</html>

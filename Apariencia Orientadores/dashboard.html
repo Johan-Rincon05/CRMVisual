@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Carreras</title>
+    <link rel="stylesheet" href="CSS/dashboard.css">
+
+</head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidebar-item">Dashboard</a>
+                <a href="views/carreras.html" class="sidebar-item">Carreras</a>
+                <a href="BASE.html" class="sidebar-item">Base</a>
+                <a href="views/ventas.html" class="sidebar-item">Ventas</a>
+                <a href="views/promociones.html" class="sidebar-item">Promociones Activas</a>
+                <a href="views/ayuda.html" class="sidebar-item">Ayuda</a>
+            </div>
+            <div class="main-content">
+                <div class="header">
+                    <div class="greeting">Hola Johana 👋</div>
+                    <div class="search-bar">Search</div>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-value">$16.8M</div>
+                        <div class="metric-label">37.8% este mes</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">80</div>
+                        <div class="metric-label">25.65% esta semana</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">$1.5M</div>
+                        <div class="metric-label">15% esta semana</div>
+                    </div>
+                </div>
+
+                <div class="sales-chart">
+                    <div class="chart-title">VENTAS POR MES</div>
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="convertibility">
+                    <div class="chart-title">CONVERTIBILIDAD</div>
+                    <div class="chart-container">
+                        <canvas id="conversionChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="careers">
+                    <div class="chart-title">CARRERAS</div>
+                    <div class="career-item">
+                        <div class="career-icon">
+                            <!-- Ingeniería en Sistemas icon -->
+                        </div>
+                        <div class="career-details">
+                            <div class="career-title">Ingeniería en Sistemas</div>
+                            <div class="career-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="career-stats">
+                                <div class="career-stat">32 Cupos</div>
+                                <div class="career-stat">$210,000</div>
+                                <div class="career-stat">20</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-icon">
+                            <!-- Ingeniería Industrial icon -->
+                        </div>
+                        <div class="career-details">
+                            <div class="career-title">Ingeniería Industrial</div>
+                            <div class="career-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="career-stats">
+                                <div class="career-stat">32 Cupos</div>
+                                <div class="career-stat">$210,000</div>
+                                <div class="career-stat">20</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-icon">
+                            <!-- Licenciatura en Educación Inf. icon -->
+                        </div>
+                        <div class="career-details">
+                            <div class="career-title">Licenciatura en Educación Infantil</div>
+                            <div class="career-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="career-stats">
+                                <div class="career-stat">32 Cupos</div>
+                                <div class="career-stat">$210,000</div>
+                                <div class="career-stat">20</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-icon">
+                            <!-- Psicología icon -->
+                        </div>
+                        <div class="career-details">
+                            <div class="career-title">Psicología</div>
+                            <div class="career-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="career-stats">
+                                <div class="career-stat">32 Cupos</div>
+                                <div class="career-stat">$210,000</div>
+                                <div class="career-stat">20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/dashboard.js"></script>
+
+    </body>
+</html>
